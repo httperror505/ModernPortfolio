@@ -6,6 +6,11 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 /* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, Poppins, sans-serif;
