@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *)); /* Enable manual dark mode */
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, Poppins, sans-serif;
   line-height: 1.5;
@@ -67,4 +74,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
