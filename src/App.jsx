@@ -55,7 +55,7 @@ function App() {
         </nav>
         {/* body */}
         <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-6xl font-bold text-green-600 Poppins z-10">Full Stack Software Engineer</h1>
+        <h1 className="text-7xl font-bold text-green-600 Poppins z-10">Full Stack Software Engineer</h1>
         <img
           src="/portrait.png"
           alt="Patrick"
