@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const storedTheme = localStorage.getItem("theme") || "light";
@@ -12,24 +14,34 @@ export default function Navbar() {
   const isDark = theme === "dark";
 
   return (
-    <nav className="bg-white dark:bg-[#040708] text-black dark:text-white p-6 flex justify-end items-center w-full">
+    <nav className=" text-black dark:text-white p-6 flex justify-end items-center w-full fixed top-0 z-100 backdrop-filter backdrop-blur-sm bg-opacity-100">
       {/* Menu Links */}
       <ul className="flex space-x-6 font-semibold mx-5">
-        <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
-          Home
-        </li>
-        <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
-          Education
-        </li>
-        <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
-          Projects
-        </li>
-        <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
-          Skills
-        </li>
-        <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
-          Contact
-        </li>
+        <Link to="/" smooth={true} duration={500}>
+          <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
+            Home
+          </li>
+        </Link>
+        <Link to="education" smooth={true} duration={500}>
+          <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
+            Education
+          </li>
+        </Link>
+        <Link to="projects" smooth={true} duration={500}>
+          <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
+            Projects
+          </li>
+        </Link>
+        <Link to="skills" smooth={true} duration={500}>
+          <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
+            Skills
+          </li>
+        </Link>
+        <NavLink to="contact">
+          <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
+            Contact
+          </li>
+        </NavLink>
       </ul>
 
       {/* Dark Mode Toggle */}
@@ -45,7 +57,7 @@ export default function Navbar() {
         <span className="absolute left-2 text-xl transition-opacity dark:opacity-50 z-10">
           ☀️
         </span>
-        <span className="absolute right-2 text-xl opacity-0 transition-opacity dark:opacity-100 z-10">
+        <span className="absolute right-2 text-xl opacity-50 transition-opacity dark:opacity-100 z-10">
           🌙
         </span>
 
