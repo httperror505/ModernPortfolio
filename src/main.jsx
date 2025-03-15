@@ -24,8 +24,8 @@ const routes = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <ThemeProvider> */}
+    <ThemeProvider>
       <RouterProvider router={routes}/>
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
   </StrictMode>,
 )
