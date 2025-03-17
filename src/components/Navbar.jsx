@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className=" text-black dark:text-white p-6 flex justify-end items-center w-full fixed top-0 z-100 backdrop-filter backdrop-blur-sm bg-opacity-100">
       {/* Menu Links */}
       <ul className="flex space-x-6 font-semibold mx-5">
-        <Link to="/" smooth={true} duration={500}>
+        <Link to="home" smooth={true} duration={500}>
           <li className="hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer">
             Home
           </li>
