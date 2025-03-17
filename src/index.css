@@ -10,6 +10,44 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-animation-line1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(9) 1s forwards, blink 0.25s step-end infinite; /* Typing + blinking for Fullstack */
+}
+
+.typing-animation-line2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 3px solid black; /* Cursor for line 2 */
+  animation: typing 2s steps(17) 2s forwards, blink 0.75s step-end infinite; /* Typing + blinking for Software Engineer */
+}
+
+@media (prefers-color-scheme: dark) {
+  .typing-animation-line2 {
+    border-right: 3px solid white; /* Cursor color for dark mode */
+  }
+}
+
 
 /* 
 :root {
