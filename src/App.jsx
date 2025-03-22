@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 export default function App() {
   // const storedTheme = localStorage.getItem("theme") || "light";
@@ -24,13 +25,14 @@ export default function App() {
   const { theme, toggleTheme } = useTheme(); // Use the custom hook to access the theme
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#040708] text-black dark:text-white">
+    <div className="min-h-screen bg-white dark:bg-[#040f0f] text-black dark:text-white">
       <Navbar toggleTheme={toggleTheme} />
       {/* body */}
       <Home/>
       <Education />
       <Projects/>
       <Skills/>
+      <Footer/>
     </div>
   );
 }

@@ -28,7 +28,6 @@ export default function Home() {
   </h1>
 </div>
 
-
       {/* Image */}
       <img
         src="/portrait.png"
