@@ -21,18 +21,22 @@ export default function Home() {
       </div> */}
 
 <div className="text-center absolute inset-0 flex flex-col items-center justify-center z-0 pb-70">
-  <h1 className="text-5xl sm:text-7xl md:text-6xl lg:text-9xl font-extrabold text-black dark:text-[#c4efdf] text-center">
+  <h1 className="text-5xl sm:text-7xl md:text-6xl lg:text-9xl font-extrabold text-[#0C0C0C] dark:text-[#c4efdf] text-center">
     <span className="typing-animation-line1">Fullstack</span>
     <br />
     <span className="typing-animation-line2">Software&nbsp;&nbsp;&nbsp;Engineer</span>
   </h1>
 </div>
 
+<div>
+  
+</div>
+
       {/* Image */}
       <img
         src="/portrait.png"
         alt="John Rey's Portrait"
-        className="absolute bottom-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[25%] mx-auto left-0 right-0"
+        className="absolute bottom-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[23%] mx-auto left-0 right-0"
       />
     </section>
   );
