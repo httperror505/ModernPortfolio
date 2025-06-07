@@ -25,7 +25,7 @@ export default function App() {
   const { theme, toggleTheme } = useTheme(); // Use the custom hook to access the theme
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#040f0f] text-black dark:text-white">
+    <div className="min-h-screen bg-[#F0F8FF] dark:bg-[#0C0C0C] text-black dark:text-white">
       <Navbar toggleTheme={toggleTheme} />
       {/* body */}
       <Home/>
