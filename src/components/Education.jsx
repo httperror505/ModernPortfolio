@@ -11,7 +11,7 @@ import {
 export default function Education() {
   return (
     <section id="education" className="justify-center p-10">
-      <div className="w-full ">
+      <div className="w-full h-full">
         <h2 className="text-5xl font-bold dark:text-[#c4efdf] Poppins text-center">
           Education
         </h2>
