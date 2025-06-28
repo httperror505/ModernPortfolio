@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300"
+      className="relative h-screen flex items-center justify-center transition-colors duration-300"
     >
-      <div className="shadow-xl rounded-2xl max-w-7xl w-full p-6 sm:p-10 grid grid-cols-1 md:grid-cols-4 gap-8 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+      <div className="rounded-2xl max-w-9/12 sm:p-10 grid grid-cols-1 md:grid-cols-4 gap-8 transition-colors duration-300">
         {/* Sidebar / Profile */}
         <div className="col-span-1 flex flex-col items-center text-center">
           <img
