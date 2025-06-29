@@ -9,6 +9,34 @@ import {
 } from "@/components/ui/carousel";
 
 export default function Education() {
+  const schools = [
+    {
+      School: "Naga College Foundation, Inc.",
+      Course: "BS in Computer Science",
+      GWA: "1.50",
+    },
+    {
+      School: "Naga College Foundation, Inc.",
+      Course: "BS in Computer Science",
+      GWA: "1.50",
+    },
+    {
+      School: "Naga College Foundation, Inc.",
+      Course: "BS in Computer Science",
+      GWA: "1.50",
+    },
+    {
+      School: "Naga College Foundation, Inc.",
+      Course: "BS in Computer Science",
+      GWA: "1.50",
+    },
+    {
+      School: "Naga College Foundation, Inc.",
+      Course: "BS in Computer Science",
+      GWA: "1.50",
+    },
+  ];
+
   return (
     <section id="education" className="justify-center p-10">
       <div className="w-full h-full">
