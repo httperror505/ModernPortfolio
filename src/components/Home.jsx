@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
         {/* Sidebar / Profile */}
         <div className="col-span-1 flex flex-col items-center text-center">
           <img
-            src="/portrait.png"
+            src="/portrait.jpg"
             alt="John Rey's Portrait"
             className="rounded-full h-60 w-60 sm:h-60 sm:w-60 object-cover mb-4 border-4 border-white dark:border-gray-700"
           />
@@ -23,7 +24,7 @@ export default function Home() {
             <p>
               💻{" "}
               <a
-                href="https://github.com"
+                href="https://github.com/httperror505"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -34,7 +35,7 @@ export default function Home() {
             <p>
               🔗{" "}
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/john-rey-tolosa-dev/"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +43,18 @@ export default function Home() {
                 linkedin.com
               </a>
             </p>
-            <p>📞 0999-555-5559</p>
+            <p>📞 0909-442-2259</p>
+            <p>
+              📧{" "}
+              <a
+                href="mailto:johnrey.tolosa2@gmail.com"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                johnrey.tolosa2@gmail.com
+              </a>
+            </p>
           </div>
         </div>
 
